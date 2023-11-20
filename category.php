@@ -13,7 +13,7 @@ $id_hang = $_GET['id_hang'];
 $sql = "SELECT * FROM product WHERE id_hang = '$id_hang' ORDER BY id DESC";
 $result = mysqli_query($conn, $sql);
 
-//Tính số bản ghi của bảng product
+//Tính số bản ghi của bảng product 
 $total_table = mysqli_num_rows($result);
 
 //Thiết lập số bảng ghi trên một trang
